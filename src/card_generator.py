@@ -5,6 +5,7 @@ import textwrap
 from datetime import datetime
 import os
 from logging_config import get_logger
+from typing import Optional
 
 class NewsCardGenerator:
     """新闻卡片生成器"""
@@ -14,6 +15,7 @@ class NewsCardGenerator:
         self.card_height = 600
         self.margin = 40
         self.qr_size = 120
+        self.logger = get_logger(__name__)
         
         # 颜色配置
         self.colors = {
@@ -29,22 +31,52 @@ class NewsCardGenerator:
             'low_importance': '#A3BE8C'
         }
     
+    def _resolve_font_path(self) -> Optional[str]:
+        """选择支持中英文的字体路径。
+        优先级：环境变量 FONT_PATH -> 常见系统字体 -> None(回退默认字体)
+        """
+        env_path = os.getenv("FONT_PATH")
+        if env_path and os.path.exists(env_path):
+            return env_path
+        candidates = [
+            # Ubuntu GitHub Runner 常见 Noto CJK 路径
+            "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+            "/usr/share/fonts/opentype/noto/NotoSansCJKSC-Regular.otf",
+            "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
+            "/usr/share/fonts/truetype/noto/NotoSansSC-Regular.ttf",
+            # 中文常用开源字体
+            "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
+            "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc",
+            # Windows 常见路径（如在本地运行）
+            os.path.expandvars(r"C:\\Windows\\Fonts\\msyh.ttc"),  # 微软雅黑
+            os.path.expandvars(r"C:\\Windows\\Fonts\\simhei.ttf"),  # 黑体
+        ]
+        for p in candidates:
+            if p and os.path.exists(p):
+                return p
+        return None
+
+    def _load_font(self, size: int) -> ImageFont.FreeTypeFont:
+        path = self._resolve_font_path()
+        if path:
+            try:
+                return ImageFont.truetype(path, size)
+            except Exception as e:
+                self.logger.warning(f"Failed to load font at {path}: {e}")
+        # 回退
+        self.logger.warning("Falling back to default PIL font (may cause tofu for CJK)")
+        return ImageFont.load_default()
+
     def create_card(self, summary_data: Dict) -> str:
         """创建新闻卡片"""
         # 创建画布
         img = Image.new('RGB', (self.card_width, self.card_height), self.colors['background'])
         draw = ImageDraw.Draw(img)
         
-        # 加载字体（需要系统中有这些字体文件）
-        try:
-            title_font = ImageFont.truetype("arial.ttf", 28)
-            content_font = ImageFont.truetype("arial.ttf", 16)
-            meta_font = ImageFont.truetype("arial.ttf", 12)
-        except:
-            # 使用默认字体
-            title_font = ImageFont.load_default()
-            content_font = ImageFont.load_default()
-            meta_font = ImageFont.load_default()
+        # 加载支持 CJK 的字体（避免中文方块/乱码）
+        title_font = self._load_font(28)
+        content_font = self._load_font(16)
+        meta_font = self._load_font(12)
         
         # 绘制边框
         draw.rectangle([0, 0, self.card_width-1, self.card_height-1], 
@@ -108,8 +140,7 @@ class NewsCardGenerator:
         os.makedirs("generated_cards", exist_ok=True)
         
         img.save(filepath, "PNG", quality=95)
-        logger = get_logger(__name__)
-        logger.info(f"Card saved: {filepath}")
+        self.logger.info(f"Card saved: {filepath}")
         return filepath
     
     def _wrap_text(self, text: str, font, max_width: int) -> list:
@@ -164,13 +195,12 @@ class NewsCardGenerator:
         """批量生成卡片"""
         card_paths = []
         
-        logger = get_logger(__name__)
         for summary in summaries:
             try:
                 card_path = self.create_card(summary)
                 card_paths.append(card_path)
             except Exception as e:
-                logger.error(f"Error generating card for {summary['original_title']}: {e}", exc_info=True)
+                self.logger.error(f"Error generating card for {summary['original_title']}: {e}", exc_info=True)
                 continue
         
         return card_paths
