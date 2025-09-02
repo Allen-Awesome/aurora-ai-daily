@@ -1,0 +1,119 @@
+2025-09-02 12:43:01,185 - INFO - 开始每日新闻采集任务
+2025-09-02 12:43:01,187 - INFO - 正在爬取AI行业新闻...
+2025-09-02 12:43:21,678 - INFO - 爬取到 50 篇文章
+2025-09-02 12:43:21,679 - INFO - 去重后剩余 50 篇文章
+2025-09-02 12:43:21,680 - INFO - 正在生成文章摘要...
+2025-09-02 12:43:23,344 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:43:37,256 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:43:51,985 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:44:05,928 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:44:18,329 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:44:32,242 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:44:45,877 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:45:05,731 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:45:21,378 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:45:34,560 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:45:51,612 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:46:06,139 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:46:21,180 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:46:34,694 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:46:48,352 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:47:03,090 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:47:17,030 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:47:30,186 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:47:43,529 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:47:57,505 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 12:48:11,499 - INFO - 生成了 20 个摘要
+2025-09-02 12:48:11,500 - INFO - 正在生成新闻卡片...
+2025-09-02 12:48:12,107 - INFO - 生成了 10 张卡片
+2025-09-02 12:48:12,114 - INFO - 每日新闻采集任务完成
+2025-09-02 12:48:15,112 - INFO - 已通过服务器酱推送到微信
+2025-09-02 12:59:11,174 - INFO - 开始每日新闻采集任务
+2025-09-02 12:59:11,174 - INFO - 正在爬取AI行业新闻...
+2025-09-02 13:03:24,753 - INFO - 爬取到 123 篇文章
+2025-09-02 13:03:24,753 - INFO - 去重后剩余 123 篇文章
+2025-09-02 13:03:24,754 - INFO - 正在生成文章摘要...
+2025-09-02 13:03:26,212 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:03:40,210 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:03:55,232 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:04:11,418 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:04:24,655 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:04:39,048 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:04:53,419 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:05:09,636 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:05:25,608 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:05:39,073 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:05:56,911 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:06:12,097 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:06:27,716 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:06:44,556 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:06:58,318 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:07:11,638 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:07:28,363 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:07:43,114 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:07:56,202 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:08:06,250 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:08:18,684 - INFO - 生成了 20 个摘要
+2025-09-02 13:08:18,684 - INFO - 正在生成新闻卡片...
+2025-09-02 13:08:19,291 - INFO - 生成了 10 张卡片
+2025-09-02 13:08:19,291 - ERROR - 每日新闻采集任务失败: name 'datetime' is not defined
+2025-09-02 13:09:49,995 - INFO - 开始每日新闻采集任务
+2025-09-02 13:09:49,995 - INFO - 正在爬取AI行业新闻...
+2025-09-02 13:13:57,771 - INFO - 爬取到 123 篇文章
+2025-09-02 13:13:57,772 - INFO - 去重后剩余 123 篇文章
+2025-09-02 13:13:57,772 - INFO - 正在生成文章摘要...
+2025-09-02 13:13:59,330 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:14:13,984 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:14:30,430 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:14:47,903 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:15:02,504 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:15:19,565 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:15:34,998 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:15:52,522 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:16:10,374 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:16:24,319 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:16:43,769 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:17:00,569 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:17:17,673 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:17:34,938 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:17:48,004 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:18:03,275 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:18:17,313 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:18:30,444 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:18:43,774 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:18:57,912 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:19:08,843 - INFO - 生成了 20 个摘要
+2025-09-02 13:19:08,843 - INFO - 正在生成新闻卡片...
+2025-09-02 13:19:09,412 - INFO - 生成了 10 张卡片
+2025-09-02 13:19:09,418 - INFO - 每日新闻采集任务完成
+2025-09-02 13:19:12,449 - INFO - 已通过服务器酱推送到微信
+2025-09-02 13:25:43,960 - INFO - 开始每日新闻采集任务
+2025-09-02 13:25:43,960 - INFO - 正在爬取AI行业新闻...
+2025-09-02 13:29:59,606 - INFO - 爬取到 123 篇文章
+2025-09-02 13:29:59,606 - INFO - 去重后剩余 123 篇文章
+2025-09-02 13:29:59,606 - INFO - 正在生成文章摘要...
+2025-09-02 13:30:01,170 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:30:14,916 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:30:28,887 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:30:43,681 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:30:57,233 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:31:12,583 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:31:28,144 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:31:44,979 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:32:02,328 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:32:18,672 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:32:38,350 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:32:53,511 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:33:08,196 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:33:24,327 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:33:39,910 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:33:54,109 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:34:09,014 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:34:24,081 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:34:38,060 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:34:50,998 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 13:35:04,363 - INFO - 生成了 20 个摘要
+2025-09-02 13:35:04,364 - INFO - 正在生成新闻卡片...
+2025-09-02 13:35:04,933 - INFO - 生成了 10 张卡片
+2025-09-02 13:35:04,939 - INFO - 每日新闻采集任务完成
+2025-09-02 13:35:08,253 - INFO - 已通过服务器酱推送到微信

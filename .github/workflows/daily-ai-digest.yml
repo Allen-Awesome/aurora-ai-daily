@@ -1,0 +1,52 @@
+name: Daily AI Digest
+
+on:
+  schedule:
+    # 08:00 和 20:00 亚洲/上海时间 -> 换算为 UTC 00:00 与 12:00
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-digest:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: daily-ai-digest
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scheduler once (generate summaries and cards)
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_BASE_URL: ${{ secrets.DEEPSEEK_BASE_URL }}
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+          DEBUG: 'False'
+          LOG_LEVEL: 'INFO'
+          CRAWL_DELAY: '1'
+          MAX_ARTICLES_PER_SOURCE: ${{ secrets.MAX_ARTICLES_PER_SOURCE }}
+          MAX_DAILY_SUMMARIES: ${{ secrets.MAX_DAILY_SUMMARIES }}
+          IMAGE_PROXY_ENABLED: ${{ secrets.IMAGE_PROXY_ENABLED }}
+          IMAGE_PROXY_WIDTH: ${{ secrets.IMAGE_PROXY_WIDTH }}
+        run: |
+          python ./src/scheduler.py --now
+
+      - name: Upload artifact (daily output)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily_news_output
+          path: |
+            daily_news/**
+          retention-days: 14
