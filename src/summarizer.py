@@ -1,4 +1,5 @@
 import openai
+import httpx
 from typing import Dict, List
 from logging_config import get_logger
 import re
@@ -15,9 +16,12 @@ class ContentSummarizer:
         if base_url is None:
             base_url = os.getenv('DEEPSEEK_BASE_URL', 'https://api.deepseek.com')
         
+        # 提供自建 httpx.Client 以绕过某些 Runner 上 httpx 与 openai 的 proxies 兼容性问题
+        http_client = httpx.Client(timeout=30.0)
         self.client = openai.OpenAI(
             api_key=api_key,
-            base_url=base_url
+            base_url=base_url,
+            http_client=http_client,
         )
         
     def generate_summary(self, article: Dict) -> Dict:
