@@ -2,8 +2,9 @@ name: Daily AI Digest
 
 on:
   schedule:
-    # 08:00 和 20:00 亚洲/上海时间 -> 换算为 UTC 00:00 与 12:00
-    - cron: '0 0,12 * * *'
+    # 北京时间 08:00 和 20:00 对应 UTC 00:00 和 12:00
+    # 提前15分钟执行以应对GitHub Actions调度延迟
+    - cron: '45 23,11 * * *'
   workflow_dispatch:
 
 jobs:
