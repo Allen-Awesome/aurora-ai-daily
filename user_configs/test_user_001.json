@@ -1,0 +1,715 @@
+{
+  "user_id": "test_user_001",
+  "created_at": "2025-09-06T09:47:44.279705",
+  "interests": [
+    "AI技术",
+    "机器学习"
+  ],
+  "reading_history": [
+    {
+      "timestamp": "2025-09-06T10:05:13.156287",
+      "keywords": [
+        "AI"
+      ],
+      "reading_time": 120,
+      "completion_rate": 0.8,
+      "liked": true,
+      "shared": true,
+      "commented": true
+    },
+    {
+      "timestamp": "2025-09-05T10:05:13.156358",
+      "keywords": [
+        "机器学习"
+      ],
+      "reading_time": 130,
+      "completion_rate": 0.9,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-09-04T10:05:13.156376",
+      "keywords": [
+        "GPT"
+      ],
+      "reading_time": 140,
+      "completion_rate": 1.0,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-09-03T10:05:13.156386",
+      "keywords": [
+        "AI"
+      ],
+      "reading_time": 150,
+      "completion_rate": 0.8,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-09-02T10:05:13.156427",
+      "keywords": [
+        "机器学习"
+      ],
+      "reading_time": 160,
+      "completion_rate": 0.9,
+      "liked": true,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-09-01T10:05:13.156448",
+      "keywords": [
+        "GPT"
+      ],
+      "reading_time": 170,
+      "completion_rate": 1.0,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-31T10:05:13.156458",
+      "keywords": [
+        "AI"
+      ],
+      "reading_time": 180,
+      "completion_rate": 0.8,
+      "liked": false,
+      "shared": true,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-30T10:05:13.156466",
+      "keywords": [
+        "机器学习"
+      ],
+      "reading_time": 190,
+      "completion_rate": 0.9,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-29T10:05:13.156474",
+      "keywords": [
+        "GPT"
+      ],
+      "reading_time": 200,
+      "completion_rate": 1.0,
+      "liked": true,
+      "shared": false,
+      "commented": true
+    },
+    {
+      "timestamp": "2025-08-28T10:05:13.156482",
+      "keywords": [
+        "AI"
+      ],
+      "reading_time": 210,
+      "completion_rate": 0.8,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-27T10:05:13.156490",
+      "keywords": [
+        "机器学习"
+      ],
+      "reading_time": 220,
+      "completion_rate": 0.9,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-26T10:05:13.156498",
+      "keywords": [
+        "GPT"
+      ],
+      "reading_time": 230,
+      "completion_rate": 1.0,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-25T10:05:13.156507",
+      "keywords": [
+        "AI"
+      ],
+      "reading_time": 240,
+      "completion_rate": 0.8,
+      "liked": true,
+      "shared": true,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-24T10:05:13.156515",
+      "keywords": [
+        "机器学习"
+      ],
+      "reading_time": 250,
+      "completion_rate": 0.9,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-23T10:05:13.156522",
+      "keywords": [
+        "GPT"
+      ],
+      "reading_time": 260,
+      "completion_rate": 1.0,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-22T10:05:13.156567",
+      "keywords": [
+        "AI"
+      ],
+      "reading_time": 270,
+      "completion_rate": 0.8,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-21T10:05:13.156591",
+      "keywords": [
+        "机器学习"
+      ],
+      "reading_time": 280,
+      "completion_rate": 0.9,
+      "liked": true,
+      "shared": false,
+      "commented": true
+    },
+    {
+      "timestamp": "2025-08-20T10:05:13.156601",
+      "keywords": [
+        "GPT"
+      ],
+      "reading_time": 290,
+      "completion_rate": 1.0,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-19T10:05:13.156610",
+      "keywords": [
+        "AI"
+      ],
+      "reading_time": 300,
+      "completion_rate": 0.8,
+      "liked": false,
+      "shared": true,
+      "commented": false
+    },
+    {
+      "timestamp": "2025-08-18T10:05:13.156618",
+      "keywords": [
+        "机器学习"
+      ],
+      "reading_time": 310,
+      "completion_rate": 0.9,
+      "liked": false,
+      "shared": false,
+      "commented": false
+    }
+  ],
+  "interaction_history": [
+    {
+      "timestamp": "2025-09-06T09:47:44.279721",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T09:47:44.281260",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T09:47:44.282655",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T09:59:33.444725",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T09:59:33.445889",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T09:59:33.447083",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:05:13.150726",
+      "type": "article_read",
+      "data": {
+        "article_id": "art1",
+        "title": "AI新闻1"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:05:13.152596",
+      "type": "article_like",
+      "data": {
+        "article_id": "art2",
+        "title": "AI新闻2"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:05:13.154789",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是大语言模型？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:10:52.963286",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:10:52.965388",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:10:52.967239",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:12:53.299183",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:12:53.301741",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:12:53.304183",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:16:57.193049",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:16:57.196344",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:16:57.198502",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:21:19.287641",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:21:19.290360",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:21:19.292307",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:27:04.701919",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:27:04.703546",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:27:04.705129",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:31:03.704357",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:31:03.706628",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:31:03.708647",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:34:25.574171",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:34:25.576053",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:34:25.577905",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:42:15.430195",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:42:15.432204",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:42:15.434258",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:00:24.263270",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:00:24.265258",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:00:24.267022",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:05:34.095281",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:05:34.097671",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:05:34.100145",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T13:09:44.252487",
+      "type": "article_read",
+      "data": {
+        "article_id": "art_001",
+        "title": "GPT-4技术解析",
+        "keywords": [
+          "GPT-4",
+          "AI技术",
+          "深度学习"
+        ],
+        "reading_time": 180
+      }
+    },
+    {
+      "timestamp": "2025-09-06T13:09:44.256197",
+      "type": "article_like",
+      "data": {
+        "article_id": "art_002",
+        "title": "AI投资趋势分析",
+        "keywords": [
+          "AI投资",
+          "创业",
+          "融资"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-09-06T13:09:44.259615",
+      "type": "question_asked",
+      "data": {
+        "question": "什么是Transformer架构？",
+        "domain": "技术"
+      }
+    }
+  ],
+  "preferences": {
+    "summary_level": "business",
+    "notification_frequency": "daily",
+    "preferred_sources": []
+  }
+}

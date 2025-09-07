@@ -6,18 +6,25 @@ from datetime import datetime
 import os
 from logging_config import get_logger
 from typing import Optional
+import re
+from card_templates import get_template, TEMPLATES
 
 class NewsCardGenerator:
     """新闻卡片生成器"""
     
-    def __init__(self):
+    def __init__(self, template_name: str = None):
+        # 原有配置保持兼容
         self.card_width = 800
         self.card_height = 600
         self.margin = 40
         self.qr_size = 120
         self.logger = get_logger(__name__)
         
-        # 颜色配置
+        # 模板配置
+        self.template_name = template_name or os.getenv('CARD_TEMPLATE', 'detailed')
+        self.template = get_template(self.template_name)
+        
+        # 颜色配置（保持向后兼容）
         self.colors = {
             'background': '#FFFFFF',
             'primary': '#2E3440',
@@ -67,8 +74,37 @@ class NewsCardGenerator:
         self.logger.warning("Falling back to default PIL font (may cause tofu for CJK)")
         return ImageFont.load_default()
 
-    def create_card(self, summary_data: Dict) -> str:
-        """创建新闻卡片"""
+    def create_card(self, summary_data: Dict, template_override: str = None, task_time: datetime = None) -> str:
+        """创建新闻卡片（支持模板选择）"""
+        # 使用传入的时间戳或当前时间
+        if task_time is None:
+            task_time = datetime.now()
+            
+        # 选择模板
+        template_to_use = template_override or self.template_name
+        
+        # 如果指定了不同的模板，临时切换
+        if template_override and template_override != self.template_name:
+            template = get_template(template_override)
+        else:
+            template = self.template
+        
+        # 使用模板生成卡片（传递时间戳）
+        img = template.generate_card(summary_data, self._load_font, task_time)
+        
+        # 保存图片（使用统一时间戳）
+        filename = f"card_{task_time.strftime('%Y%m%d_%H%M%S')}_{hash(summary_data['url']) % 10000}.png"
+        filepath = os.path.join("generated_cards", filename)
+        
+        # 确保目录存在
+        os.makedirs("generated_cards", exist_ok=True)
+        
+        img.save(filepath, "PNG", quality=95)
+        self.logger.info(f"Card saved using {template_to_use} template: {filepath}")
+        return filepath
+    
+    def create_card_legacy(self, summary_data: Dict) -> str:
+        """创建新闻卡片（原有实现，保持向后兼容）"""
         # 创建画布
         img = Image.new('RGB', (self.card_width, self.card_height), self.colors['background'])
         draw = ImageDraw.Draw(img)
@@ -104,10 +140,10 @@ class NewsCardGenerator:
         draw.text((self.margin, y_pos + 30), time_text, 
                  fill=self.colors['text_light'], font=meta_font)
         
-        # 绘制摘要内容
-        summary_text = summary_data['summary']
-        wrapped_summary = self._wrap_text(summary_text, content_font, 
-                                        self.card_width - 2*self.margin - self.qr_size - 20)
+        # 绘制摘要内容（预处理：冒号、序号、短横线独立成行）
+        summary_text = self._preprocess_text(summary_data['summary'])
+        wrapped_summary = self._wrap_paragraphs(summary_text, content_font,
+                                               self.card_width - 2*self.margin - self.qr_size - 20)
         
         y_pos += 70
         for line in wrapped_summary:
@@ -144,27 +180,78 @@ class NewsCardGenerator:
         return filepath
     
     def _wrap_text(self, text: str, font, max_width: int) -> list:
-        """文字换行处理"""
+        """按宽度换行，兼容中英文。优先在空格与标点处分行。"""
+        if not text:
+            return [""]
+        preferred_breaks = set(" ，。；：、,.;:!?）)]】》>\u3002\uFF1A\uFF0C\uFF1B\uFF01\uFF1F")
         lines = []
-        words = text.split()
-        current_line = ""
-        
-        for word in words:
-            test_line = current_line + " " + word if current_line else word
-            bbox = font.getbbox(test_line)
-            text_width = bbox[2] - bbox[0]
-            
-            if text_width <= max_width:
-                current_line = test_line
+        buf = ""
+        last_break_idx = -1
+        for i, ch in enumerate(text):
+            candidate = buf + ch
+            bbox = font.getbbox(candidate)
+            w = bbox[2] - bbox[0]
+            if w <= max_width:
+                buf = candidate
+                if ch == ' ' or ch in preferred_breaks:
+                    last_break_idx = len(buf) - 1
+                continue
+            # 超宽，需要换行
+            if last_break_idx >= 0:
+                # 在最近的优选断点处分行
+                lines.append(buf[: last_break_idx + 1].rstrip())
+                # 将剩余部分作为下一行起始
+                remainder = buf[last_break_idx + 1 :].lstrip()
+                buf = remainder + ch
             else:
-                if current_line:
-                    lines.append(current_line)
-                current_line = word
-        
-        if current_line:
-            lines.append(current_line)
-        
+                # 没有可用断点，强制按当前字符前换行
+                if buf:
+                    lines.append(buf)
+                buf = ch
+            last_break_idx = -1
+        if buf:
+            lines.append(buf)
         return lines
+
+    def _wrap_paragraphs(self, text: str, font, max_width: int) -> list:
+        """对段落进行逐段换行，保持预处理后的结构。"""
+        output = []
+        for raw_line in text.splitlines():
+            raw_line = raw_line.rstrip()
+            if not raw_line:
+                output.append("")
+                continue
+            output.extend(self._wrap_text(raw_line, font, max_width))
+        return output
+
+    def _preprocess_text(self, text: str) -> str:
+        """根据要求优化排版：
+        - 含冒号的提示词独立成行（在提示词前断行，但提示词与其后的内容同一行）
+        - 序号(1. / 1、)独立成行
+        - 短横线(-)作为条目独立成行
+        """
+        if not text:
+            return ""
+        s = text
+        # 1) 在常见提示词（如 行业影响/重要结论/核心发现/关键技术/关键词 等）前换行
+        labels = [
+            "行业影响", "重要结论", "重要数据", "核心观点", "核心发现", "关键技术", "结论", "摘要", "关键词"
+        ]
+        label_pat = r"(?<!^)\s*(?=(?:" + "|".join(labels) + r")[：:])"
+        s = re.sub(label_pat, "\n", s)
+        # 紧跟标签后的冒号若直接连接短横线，令短横线换到下一行作为条目起始
+        s = re.sub(r"([：:])\s*-", r"\1\n-", s)
+        # 2) 在非行首出现的编号前换行，如 1. 2. 或 1、2、
+        s = re.sub(r"(?<!^)\s*(?=(\d+[\.、]))", lambda m: "\n" if m.start() != 0 else "", s)
+        # 3) 在非行首出现的短横线条目前换行（允许无空格，如 -实验…）
+        # 前一个字符需是分隔符，避免切断英文连字符
+        s = re.sub(r"(?<!^) (?=)", "", s)  # no-op spacer to keep patch distinct
+        s = re.sub(r"(?<!^) (?=)", "", s)  # no-op
+        s = re.sub(r"(?<!^)\s*-(?=\s)", r"\n-", s)  # 原有规则（有空格的情况）
+        s = re.sub(r"(?<=[:：，。；、\s])-(?=\S)", r"\n-", s)  # 无空格直接接文字的情况
+        # 4) 规范多余空白
+        s = re.sub(r"\n\s+", "\n", s)
+        return s.strip()
     
     def _get_importance_color(self, score: float) -> str:
         """根据重要性评分获取颜色"""
@@ -191,16 +278,45 @@ class NewsCardGenerator:
         
         return qr_img
     
-    def batch_generate_cards(self, summaries: list) -> list:
+    def batch_generate_cards(self, summaries: list, template_override: str = None, task_time: datetime = None) -> list:
         """批量生成卡片"""
         card_paths = []
         
         for summary in summaries:
             try:
-                card_path = self.create_card(summary)
+                card_path = self.create_card(summary, template_override, task_time)
                 card_paths.append(card_path)
             except Exception as e:
                 self.logger.error(f"Error generating card for {summary['original_title']}: {e}", exc_info=True)
                 continue
         
         return card_paths
+    
+    def batch_generate_multi_template_cards(self, summaries: list, templates: list = None, task_time: datetime = None) -> dict:
+        """使用多个模板批量生成卡片"""
+        if templates is None:
+            templates = ['compact', 'detailed', 'image_text']
+        
+        results = {}
+        
+        for template_name in templates:
+            try:
+                self.logger.info(f"Generating cards using {template_name} template...")
+                template_paths = []
+                
+                for summary in summaries:
+                    try:
+                        card_path = self.create_card(summary, template_name, task_time)
+                        template_paths.append(card_path)
+                    except Exception as e:
+                        self.logger.error(f"Error generating {template_name} card for {summary['original_title']}: {e}")
+                        continue
+                
+                results[template_name] = template_paths
+                self.logger.info(f"Generated {len(template_paths)} cards using {template_name} template")
+                
+            except Exception as e:
+                self.logger.error(f"Error with template {template_name}: {e}")
+                results[template_name] = []
+        
+        return results

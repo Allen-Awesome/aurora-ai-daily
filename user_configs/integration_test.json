@@ -1,0 +1,53 @@
+{
+  "user_id": "integration_test",
+  "created_at": "2025-09-06T08:00:53.868294",
+  "updated_at": "2025-09-06T08:00:53.868299",
+  "active": true,
+  "interest_tags": {
+    "ai_models": true,
+    "machine_learning": true,
+    "deep_learning": true,
+    "computer_vision": false,
+    "nlp": true,
+    "robotics": false,
+    "autonomous_driving": false,
+    "ai_chips": false,
+    "ai_startups": true,
+    "ai_investment": true,
+    "ai_ethics": false,
+    "ai_regulation": false
+  },
+  "keyword_filters": {
+    "include_keywords": [],
+    "exclude_keywords": [],
+    "priority_keywords": []
+  },
+  "source_preferences": {
+    "preferred_sources": [],
+    "blocked_sources": [],
+    "source_weights": {}
+  },
+  "notification_settings": {
+    "enabled": true,
+    "min_importance_score": 0.7,
+    "max_daily_items": 20,
+    "preferred_times": [
+      "08:00",
+      "20:00"
+    ],
+    "template_preference": "detailed",
+    "include_images": true
+  },
+  "reading_history": {
+    "read_articles": [],
+    "liked_articles": [],
+    "shared_articles": [],
+    "reading_time_preference": "fast"
+  },
+  "learning_data": {
+    "click_keywords": {},
+    "read_sources": {},
+    "engagement_score": 0.5,
+    "last_active": "2025-09-06T08:00:53.868303"
+  }
+}

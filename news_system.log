@@ -117,3 +117,904 @@
 2025-09-02 13:35:04,933 - INFO - ������ 10 �ſ�Ƭ
 2025-09-02 13:35:04,939 - INFO - ÿ�����Ųɼ��������
 2025-09-02 13:35:08,253 - INFO - ��ͨ�������������͵�΢��
+2025-09-02 14:52:13,027 | INFO | __main__ | daily_news_collection:38 | 开始每日新闻采集任务
+2025-09-02 14:52:13,028 | INFO | __main__ | daily_news_collection:41 | 正在爬取AI行业新闻...
+2025-09-02 14:52:30,106 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-02 14:52:32,321 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-02 14:52:34,949 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: arxiv_ai -> 0 items
+2025-09-02 14:52:54,536 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: towards_data_science -> 10 items
+2025-09-02 14:53:21,705 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: ai_news -> 10 items
+2025-09-02 14:53:41,081 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: mit_tech_review -> 10 items
+2025-09-02 14:54:10,792 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: qbitai -> 10 items
+2025-09-02 14:54:34,652 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: jiqizhixin -> 10 items
+2025-09-02 14:54:38,773 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: zhidx -> 0 items
+2025-09-02 14:55:04,566 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: infoq_cn -> 10 items
+2025-09-02 14:55:30,117 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: 36kr -> 3 items
+2025-09-02 14:55:50,045 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: hn_ai -> 10 items
+2025-09-02 14:56:06,044 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_ml -> 10 items
+2025-09-02 14:56:14,988 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_artificial -> 10 items
+2025-09-02 14:56:27,157 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_localllama -> 10 items
+2025-09-02 14:56:29,794 | INFO | __main__ | daily_news_collection:43 | 爬取到 123 篇文章
+2025-09-02 14:56:29,794 | INFO | __main__ | daily_news_collection:48 | 去重后剩余 123 篇文章
+2025-09-02 14:56:29,794 | INFO | __main__ | daily_news_collection:51 | 正在生成文章摘要...
+2025-09-02 14:56:31,942 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:56:48,452 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:57:03,467 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:57:19,955 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:57:35,177 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:57:53,436 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:58:11,173 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:58:33,364 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:58:50,468 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:59:06,145 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:59:27,484 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 14:59:43,374 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:00:02,017 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:00:18,707 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:00:34,163 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:00:50,961 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:01:10,200 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:01:23,123 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:01:39,418 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:01:55,721 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 15:02:08,929 | INFO | __main__ | daily_news_collection:53 | 生成了 20 个摘要
+2025-09-02 15:02:08,929 | INFO | __main__ | daily_news_collection:56 | 正在生成新闻卡片...
+2025-09-02 15:02:09,194 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150209_8946.png
+2025-09-02 15:02:09,432 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150209_2874.png
+2025-09-02 15:02:09,631 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150209_7265.png
+2025-09-02 15:02:09,930 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150209_7763.png
+2025-09-02 15:02:10,165 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150210_7631.png
+2025-09-02 15:02:10,375 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150210_5378.png
+2025-09-02 15:02:10,535 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150210_1392.png
+2025-09-02 15:02:10,692 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150210_8771.png
+2025-09-02 15:02:10,829 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150210_840.png
+2025-09-02 15:02:10,972 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_150210_2798.png
+2025-09-02 15:02:10,973 | INFO | __main__ | daily_news_collection:58 | 生成了 10 张卡片
+2025-09-02 15:02:10,982 | INFO | __main__ | daily_news_collection:63 | 每日新闻采集任务完成
+2025-09-02 15:02:14,424 | INFO | notifier | send_serverchan:30 | ServerChan 推送成功
+2025-09-02 15:02:14,425 | INFO | __main__ | daily_news_collection:71 | 已通过服务器酱推送到微信
+2025-09-02 16:32:42,432 | INFO | __main__ | daily_news_collection:39 | 开始每日新闻采集任务
+2025-09-02 16:32:42,432 | INFO | __main__ | daily_news_collection:42 | 正在爬取AI行业新闻...
+2025-09-02 16:33:07,209 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-02 16:33:12,934 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-02 16:33:16,189 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: arxiv_ai -> 0 items
+2025-09-02 16:33:49,942 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: towards_data_science -> 10 items
+2025-09-02 16:34:23,422 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: ai_news -> 10 items
+2025-09-02 16:34:41,763 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: mit_tech_review -> 10 items
+2025-09-02 16:35:13,061 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: qbitai -> 10 items
+2025-09-02 16:35:35,938 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: jiqizhixin -> 10 items
+2025-09-02 16:35:39,450 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: zhidx -> 0 items
+2025-09-02 16:36:04,062 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: infoq_cn -> 10 items
+2025-09-02 16:36:28,779 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: 36kr -> 3 items
+2025-09-02 16:36:53,644 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: hn_ai -> 10 items
+2025-09-02 16:37:09,511 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_ml -> 10 items
+2025-09-02 16:37:17,822 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_artificial -> 10 items
+2025-09-02 16:37:33,290 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_localllama -> 10 items
+2025-09-02 16:37:35,880 | INFO | __main__ | daily_news_collection:44 | 爬取到 123 篇文章
+2025-09-02 16:37:35,880 | INFO | __main__ | daily_news_collection:49 | 去重后剩余 123 篇文章
+2025-09-02 16:37:35,881 | INFO | __main__ | daily_news_collection:52 | 正在生成文章摘要...
+2025-09-02 16:37:37,700 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:37:53,416 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:38:10,000 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:38:27,863 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:38:43,231 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:38:59,539 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:39:15,017 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:39:31,390 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:39:49,841 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:40:05,620 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:40:25,946 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:40:43,868 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:41:03,317 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:41:19,924 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:41:36,995 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:41:52,817 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:42:08,894 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:42:23,039 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:42:37,348 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:42:50,886 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 16:43:07,108 | INFO | __main__ | daily_news_collection:54 | 生成了 20 个摘要
+2025-09-02 16:43:07,108 | INFO | __main__ | daily_news_collection:57 | 正在生成新闻卡片...
+2025-09-02 16:43:07,314 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164307_5874.png
+2025-09-02 16:43:07,468 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164307_7797.png
+2025-09-02 16:43:07,661 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164307_2846.png
+2025-09-02 16:43:07,866 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164307_119.png
+2025-09-02 16:43:08,060 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164308_4419.png
+2025-09-02 16:43:08,227 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164308_8605.png
+2025-09-02 16:43:08,423 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164308_5798.png
+2025-09-02 16:43:08,628 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164308_7945.png
+2025-09-02 16:43:08,783 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164308_7675.png
+2025-09-02 16:43:08,969 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250902_164308_2703.png
+2025-09-02 16:43:08,969 | INFO | __main__ | daily_news_collection:59 | 生成了 10 张卡片
+2025-09-02 16:43:08,978 | INFO | __main__ | daily_news_collection:64 | 每日新闻采集任务完成
+2025-09-02 16:43:12,298 | INFO | notifier | send_serverchan:30 | ServerChan 推送成功
+2025-09-02 16:43:12,299 | INFO | __main__ | daily_news_collection:72 | 已通过服务器酱推送到微信
+2025-09-05 20:50:28,407 | INFO | __main__ | daily_news_collection:39 | 开始每日新闻采集任务
+2025-09-05 20:50:28,411 | INFO | __main__ | daily_news_collection:42 | 正在爬取AI行业新闻...
+2025-09-05 20:50:47,047 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-05 20:50:49,423 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-05 20:50:52,012 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: arxiv_ai -> 0 items
+2025-09-05 20:51:12,537 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: towards_data_science -> 10 items
+2025-09-05 20:51:39,933 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: ai_news -> 10 items
+2025-09-05 20:52:00,230 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: mit_tech_review -> 10 items
+2025-09-05 20:52:40,048 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: qbitai -> 10 items
+2025-09-05 20:53:12,476 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: jiqizhixin -> 10 items
+2025-09-05 20:53:17,590 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: zhidx -> 0 items
+2025-09-05 20:53:53,229 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: infoq_cn -> 10 items
+2025-09-05 20:54:20,357 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: 36kr -> 0 items
+2025-09-05 20:54:47,903 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: hn_ai -> 10 items
+2025-09-05 20:55:25,736 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_ml -> 10 items
+2025-09-05 20:55:35,912 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_artificial -> 10 items
+2025-09-05 20:55:49,919 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_localllama -> 10 items
+2025-09-05 20:55:53,192 | INFO | __main__ | daily_news_collection:44 | 爬取到 120 篇文章
+2025-09-05 20:55:53,193 | INFO | __main__ | daily_news_collection:49 | 去重后剩余 119 篇文章
+2025-09-05 20:55:53,193 | INFO | __main__ | daily_news_collection:52 | 正在生成文章摘要...
+2025-09-05 20:55:54,991 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:56:09,715 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:56:27,210 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:56:42,617 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:56:55,438 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:57:12,165 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:57:28,386 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:57:43,829 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:58:00,090 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:58:18,012 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:58:39,321 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:58:53,327 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:59:12,598 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:59:25,641 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:59:43,300 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 20:59:58,705 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:00:12,476 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:00:27,584 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:00:43,895 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:00:57,671 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:01:14,143 | INFO | __main__ | daily_news_collection:54 | 生成了 20 个摘要
+2025-09-05 21:01:14,144 | INFO | __main__ | daily_news_collection:57 | 正在生成新闻卡片...
+2025-09-05 21:01:14,324 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210114_1757.png
+2025-09-05 21:01:14,469 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210114_6353.png
+2025-09-05 21:01:14,630 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210114_6842.png
+2025-09-05 21:01:14,776 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210114_2852.png
+2025-09-05 21:01:14,919 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210114_1504.png
+2025-09-05 21:01:15,045 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210115_8215.png
+2025-09-05 21:01:15,195 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210115_7904.png
+2025-09-05 21:01:15,346 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210115_1626.png
+2025-09-05 21:01:15,466 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210115_336.png
+2025-09-05 21:01:15,635 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_210115_4640.png
+2025-09-05 21:01:15,635 | INFO | __main__ | daily_news_collection:59 | 生成了 10 张卡片
+2025-09-05 21:01:15,656 | INFO | __main__ | daily_news_collection:64 | 每日新闻采集任务完成
+2025-09-05 21:01:18,170 | ERROR | notifier | send_serverchan:35 | ServerChan 请求异常: HTTPSConnectionPool(host='sctapi.ftqq.com', port=443): Max retries exceeded with url: /SCT294645TjYb1t7BZxMPcBffrvXirprWv.send (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sctapi.ftqq.com', port=443): Max retries exceeded with url: /SCT294645TjYb1t7BZxMPcBffrvXirprWv.send (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\notifier.py", line 28, in send_serverchan
+    r = requests.post(url, data=data, timeout=10)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='sctapi.ftqq.com', port=443): Max retries exceeded with url: /SCT294645TjYb1t7BZxMPcBffrvXirprWv.send (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+2025-09-05 21:01:18,178 | WARNING | __main__ | daily_news_collection:74 | 服务器酱推送未成功（可能未配置 SERVERCHAN_SENDKEY）
+2025-09-05 21:12:57,755 | INFO | __main__ | daily_news_collection:39 | 开始每日新闻采集任务
+2025-09-05 21:12:57,756 | INFO | __main__ | daily_news_collection:42 | 正在爬取AI行业新闻...
+2025-09-05 21:13:24,343 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-05 21:13:27,037 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-05 21:13:31,745 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: arxiv_ai -> 0 items
+2025-09-05 21:14:01,471 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: towards_data_science -> 10 items
+2025-09-05 21:14:04,797 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: ai_news -> 0 items
+2025-09-05 21:14:08,113 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: mit_tech_review -> 0 items
+2025-09-05 21:15:12,173 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: qbitai -> 10 items
+2025-09-05 21:15:15,587 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: jiqizhixin -> 0 items
+2025-09-05 21:15:18,906 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: zhidx -> 0 items
+2025-09-05 21:16:03,201 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: infoq_cn -> 10 items
+2025-09-05 21:16:34,145 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: 36kr -> 0 items
+2025-09-05 21:16:55,346 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: hn_ai -> 10 items
+2025-09-05 21:17:39,087 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_ml -> 10 items
+2025-09-05 21:17:48,595 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_artificial -> 10 items
+2025-09-05 21:18:03,019 | INFO | crawler | crawl_rss_feed:79 | RSS fetched: reddit_localllama -> 10 items
+2025-09-05 21:18:07,432 | INFO | __main__ | daily_news_collection:44 | 爬取到 90 篇文章
+2025-09-05 21:18:07,433 | INFO | __main__ | daily_news_collection:49 | 去重后剩余 90 篇文章
+2025-09-05 21:18:07,433 | INFO | __main__ | daily_news_collection:52 | 正在生成文章摘要...
+2025-09-05 21:18:10,087 | INFO | openai._base_client | _sleep_for_retry:1071 | Retrying request to /chat/completions in 0.439442 seconds
+2025-09-05 21:18:13,802 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:18:31,432 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:18:47,869 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:19:02,820 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:19:17,399 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:19:33,340 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:19:49,301 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:20:02,956 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:20:19,606 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:20:35,807 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:20:53,144 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:21:08,788 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:21:24,258 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:21:39,364 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:21:55,034 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:22:09,233 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:22:23,886 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:22:38,929 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:22:55,340 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:23:09,038 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 21:23:22,295 | INFO | __main__ | daily_news_collection:54 | 生成了 20 个摘要
+2025-09-05 21:23:22,296 | INFO | __main__ | daily_news_collection:57 | 正在生成新闻卡片...
+2025-09-05 21:23:22,505 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212322_3617.png
+2025-09-05 21:23:22,694 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212322_6600.png
+2025-09-05 21:23:22,850 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212322_7985.png
+2025-09-05 21:23:22,978 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212322_3076.png
+2025-09-05 21:23:23,166 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212323_7110.png
+2025-09-05 21:23:23,344 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212323_6278.png
+2025-09-05 21:23:23,521 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212323_494.png
+2025-09-05 21:23:23,698 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212323_528.png
+2025-09-05 21:23:23,848 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212323_6350.png
+2025-09-05 21:23:24,016 | INFO | card_generator | create_card:144 | Card saved: generated_cards\card_20250905_212323_9559.png
+2025-09-05 21:23:24,017 | INFO | __main__ | daily_news_collection:59 | 生成了 10 张卡片
+2025-09-05 21:23:24,024 | INFO | __main__ | daily_news_collection:64 | 每日新闻采集任务完成
+2025-09-05 21:23:27,179 | INFO | notifier | send_serverchan:36 | ServerChan 推送成功
+2025-09-05 21:23:27,180 | INFO | __main__ | daily_news_collection:72 | 已通过服务器酱推送到微信
+2025-09-06 08:00:53,526 | INFO | user_subscription | create_user:92 | Created user config: quick_test_user
+2025-09-06 08:00:53,867 | INFO | user_subscription | create_user:92 | Created user config: default_user
+2025-09-06 08:00:53,868 | INFO | user_subscription | create_user:92 | Created user config: integration_test
+2025-09-06 08:10:43,843 | INFO | __main__ | daily_news_collection:52 | 开始每日新闻采集任务 - 2025-09-06 08:10:43
+2025-09-06 08:10:43,843 | INFO | __main__ | daily_news_collection:55 | 正在爬取AI行业新闻...
+2025-09-06 08:10:57,612 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-06 08:10:59,835 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-06 08:11:02,279 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: arxiv_ai -> 0 items
+2025-09-06 08:11:23,536 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: towards_data_science -> 10 items
+2025-09-06 08:11:47,045 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_news -> 10 items
+2025-09-06 08:12:03,610 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: mit_tech_review -> 10 items
+2025-09-06 08:12:27,166 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: qbitai -> 10 items
+2025-09-06 08:12:47,230 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: jiqizhixin -> 10 items
+2025-09-06 08:12:50,693 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: zhidx -> 0 items
+2025-09-06 08:13:13,824 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: infoq_cn -> 10 items
+2025-09-06 08:13:36,160 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: 36kr -> 7 items
+2025-09-06 08:13:38,622 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: xinzhiyuan -> 0 items
+2025-09-06 08:13:58,645 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_tech_review -> 10 items
+2025-09-06 08:14:02,724 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: leiphone_ai -> 0 items
+2025-09-06 08:14:05,583 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: pingwest -> 0 items
+2025-09-06 08:14:27,530 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ifanr -> 5 items
+2025-09-06 08:15:00,550 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: geekpark -> 10 items
+2025-09-06 08:15:29,690 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: tmtpost -> 4 items
+2025-09-06 08:15:46,908 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ithome_ai -> 2 items
+2025-09-06 08:15:49,730 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: cnbeta_ai -> 0 items
+2025-09-06 08:16:21,834 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: oschina -> 6 items
+2025-09-06 08:16:24,550 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: aibase -> 0 items
+2025-09-06 08:16:28,575 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: deeptech -> 0 items
+2025-09-06 08:16:49,568 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: hn_ai -> 10 items
+2025-09-06 08:16:52,362 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_ml -> 0 items
+2025-09-06 08:16:55,092 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_artificial -> 0 items
+2025-09-06 08:16:57,725 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_localllama -> 0 items
+2025-09-06 08:17:00,177 | INFO | __main__ | daily_news_collection:57 | 爬取到 134 篇文章
+2025-09-06 08:17:00,178 | INFO | __main__ | daily_news_collection:62 | 去重后剩余 124 篇文章
+2025-09-06 08:17:00,178 | INFO | __main__ | daily_news_collection:65 | 正在生成文章摘要...
+2025-09-06 08:17:01,841 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:17:11,565 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:17:24,398 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:17:36,253 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:17:48,904 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:18:00,252 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:18:10,508 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:18:20,532 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:18:32,846 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:18:45,432 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:18:59,687 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:19:09,940 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:19:20,365 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:19:33,246 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:19:46,746 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:19:58,827 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:20:13,317 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:20:25,276 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:20:38,084 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:20:49,986 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:21:01,119 | INFO | __main__ | daily_news_collection:67 | 生成了 20 个摘要
+2025-09-06 08:21:01,119 | INFO | __main__ | daily_news_collection:70 | 正在应用个性化过滤...
+2025-09-06 08:21:01,120 | INFO | __main__ | daily_news_collection:72 | 过滤后剩余 10 个摘要
+2025-09-06 08:21:01,120 | INFO | __main__ | daily_news_collection:87 | 正在生成新闻卡片...
+2025-09-06 08:21:01,320 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_9221.png
+2025-09-06 08:21:01,468 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_6051.png
+2025-09-06 08:21:01,627 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_493.png
+2025-09-06 08:21:01,744 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_398.png
+2025-09-06 08:21:01,905 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_9130.png
+2025-09-06 08:21:02,049 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_377.png
+2025-09-06 08:21:02,170 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_44.png
+2025-09-06 08:21:02,309 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_8210.png
+2025-09-06 08:21:02,417 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_4553.png
+2025-09-06 08:21:02,595 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_081043_5654.png
+2025-09-06 08:21:02,596 | INFO | __main__ | daily_news_collection:91 | 生成了 10 张卡片
+2025-09-06 08:21:02,602 | INFO | __main__ | daily_news_collection:97 | 每日新闻采集任务完成，耗时 618.8 秒
+2025-09-06 08:21:05,652 | INFO | notifier | send_serverchan:36 | ServerChan 推送成功
+2025-09-06 08:21:05,652 | INFO | __main__ | daily_news_collection:105 | 已通过服务器酱推送到微信
+2025-09-06 08:35:07,480 | INFO | __main__ | daily_news_collection:52 | 开始每日新闻采集任务 - 2025-09-06 08:35:07
+2025-09-06 08:35:07,480 | INFO | __main__ | daily_news_collection:55 | 正在爬取AI行业新闻...
+2025-09-06 08:35:21,422 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-06 08:35:23,641 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-06 08:35:26,073 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: arxiv_ai -> 0 items
+2025-09-06 08:38:37,442 | INFO | __main__ | daily_news_collection:52 | 开始每日新闻采集任务 - 2025-09-06 08:38:37
+2025-09-06 08:38:37,443 | INFO | __main__ | daily_news_collection:55 | 正在爬取AI行业新闻...
+2025-09-06 08:38:50,734 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-06 08:38:53,038 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-06 08:38:55,552 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: arxiv_ai -> 0 items
+2025-09-06 08:39:12,725 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: towards_data_science -> 10 items
+2025-09-06 08:39:36,469 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_news -> 10 items
+2025-09-06 08:39:52,434 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: mit_tech_review -> 10 items
+2025-09-06 08:40:16,409 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: qbitai -> 10 items
+2025-09-06 08:40:36,800 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: jiqizhixin -> 10 items
+2025-09-06 08:40:40,296 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: zhidx -> 0 items
+2025-09-06 08:41:03,215 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: infoq_cn -> 10 items
+2025-09-06 08:41:27,011 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: 36kr -> 7 items
+2025-09-06 08:41:29,607 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: xinzhiyuan -> 0 items
+2025-09-06 08:41:49,650 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_tech_review -> 10 items
+2025-09-06 08:41:54,185 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: leiphone_ai -> 0 items
+2025-09-06 08:41:57,083 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: pingwest -> 0 items
+2025-09-06 08:42:18,705 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ifanr -> 5 items
+2025-09-06 08:42:56,800 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: geekpark -> 10 items
+2025-09-06 08:43:27,471 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: tmtpost -> 3 items
+2025-09-06 08:43:46,221 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ithome_ai -> 3 items
+2025-09-06 08:43:49,022 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: cnbeta_ai -> 0 items
+2025-09-06 08:44:20,799 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: oschina -> 6 items
+2025-09-06 08:44:23,548 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: aibase -> 0 items
+2025-09-06 08:44:27,348 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: deeptech -> 0 items
+2025-09-06 08:44:47,636 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: hn_ai -> 10 items
+2025-09-06 08:44:50,560 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_ml -> 0 items
+2025-09-06 08:44:53,435 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_artificial -> 0 items
+2025-09-06 08:44:56,335 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_localllama -> 0 items
+2025-09-06 08:44:58,747 | INFO | __main__ | daily_news_collection:57 | 爬取到 134 篇文章
+2025-09-06 08:44:58,747 | INFO | __main__ | daily_news_collection:62 | 去重后剩余 124 篇文章
+2025-09-06 08:44:58,747 | INFO | __main__ | daily_news_collection:65 | 正在生成文章摘要...
+2025-09-06 08:45:01,046 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:45:13,084 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:45:25,972 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:45:36,234 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:45:47,978 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:45:59,709 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:46:09,158 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:46:22,807 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:46:36,978 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:46:47,930 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:47:00,583 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:47:12,372 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:47:23,489 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:47:34,753 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:47:45,665 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:47:58,092 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:48:10,209 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:48:20,954 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:48:33,500 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:48:44,165 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 08:48:55,594 | INFO | __main__ | daily_news_collection:67 | 生成了 20 个摘要
+2025-09-06 08:48:55,594 | INFO | __main__ | daily_news_collection:70 | 正在应用个性化过滤...
+2025-09-06 08:48:55,595 | INFO | __main__ | daily_news_collection:72 | 过滤后剩余 11 个摘要
+2025-09-06 08:48:55,603 | INFO | __main__ | daily_news_collection:78 | 正在预加载图片...
+2025-09-06 08:48:55,603 | INFO | image_loader | preload_images:252 | 开始预加载 9 张图片...
+2025-09-06 08:48:55,603 | INFO | image_loader | load_images_batch:213 | 开始并行下载 9 张图片...
+2025-09-06 08:48:56,984 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2024/06/hero.png?resize=1200,675&w=600&q=80&output=webp (14390 bytes)
+2025-09-06 08:48:57,124 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2025/08/GettyImages-2198713751.jpg?w=1024&w=600&q=80&output=webp (25332 bytes)
+2025-09-06 08:48:57,235 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?resize=1200,800&w=600&q=80&output=webp (20344 bytes)
+2025-09-06 08:48:57,293 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2025/01/teens-teenagers-GettyImages-2158370531.jpg?resize=1200,800&w=600&q=80&output=webp (33498 bytes)
+2025-09-06 08:48:57,565 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=towardsdatascience.com/wp-content/uploads/2025/09/andreas-weilguny-JbSY1GKgFmA-unsplash-scaled-1.jpeg&w=600&q=80&output=webp (72462 bytes)
+2025-09-06 08:48:57,570 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2025/08/GettyImages-2198713751.jpg?w=1024 -> (600, 400)
+2025-09-06 08:48:57,571 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?resize=1200,800 -> (600, 400)
+2025-09-06 08:48:57,571 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2024/06/hero.png?resize=1200,675 -> (600, 338)
+2025-09-06 08:48:57,572 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2025/01/teens-teenagers-GettyImages-2158370531.jpg?resize=1200,800 -> (600, 400)
+2025-09-06 08:48:57,585 | INFO | image_loader | load_image:190 | 图片处理完成: https://towardsdatascience.com/wp-content/uploads/2025/09/andreas-weilguny-JbSY1GKgFmA-unsplash-scaled-1.jpeg -> (533, 400)
+2025-09-06 08:48:58,064 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2023/03/GettyImages-1175885065.jpg?resize=1200,900&w=600&q=80&output=webp (23774 bytes)
+2025-09-06 08:48:58,078 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2023/03/GettyImages-1175885065.jpg?resize=1200,900 -> (533, 400)
+2025-09-06 08:48:58,112 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2025/09/Isotopes-AI-cofounders.jpeg?w=940&w=600&q=80&output=webp (22342 bytes)
+2025-09-06 08:48:58,128 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2025/09/Isotopes-AI-cofounders.jpeg?w=940 -> (502, 400)
+2025-09-06 08:48:58,159 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=towardsdatascience.com/wp-content/uploads/2025/09/assets_task_01k48hstqheexaw87xwbrbs045_1756928859_img_2.webp&w=600&q=80&output=webp (11416 bytes)
+2025-09-06 08:48:58,160 | INFO | image_loader | load_image:190 | 图片处理完成: https://towardsdatascience.com/wp-content/uploads/2025/09/assets_task_01k48hstqheexaw87xwbrbs045_1756928859_img_2.webp -> (600, 400)
+2025-09-06 08:48:58,334 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2025/05/GettyImages-1366897838.jpg?resize=1200,800&w=600&q=80&output=webp (64074 bytes)
+2025-09-06 08:48:58,338 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-1366897838.jpg?resize=1200,800 -> (600, 400)
+2025-09-06 08:48:58,339 | INFO | image_loader | load_images_batch:237 | 批量图片加载完成: 9/9 成功，耗时 2.74s
+2025-09-06 08:48:58,341 | INFO | __main__ | daily_news_collection:80 | 图片预加载完成
+2025-09-06 08:48:58,341 | INFO | __main__ | daily_news_collection:97 | 正在生成新闻卡片...
+2025-09-06 08:48:58,509 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_8927.png
+2025-09-06 08:48:58,633 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_6252.png
+2025-09-06 08:48:58,763 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_6575.png
+2025-09-06 08:48:58,915 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_8766.png
+2025-09-06 08:48:59,022 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_3946.png
+2025-09-06 08:48:59,182 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_8420.png
+2025-09-06 08:48:59,331 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_7257.png
+2025-09-06 08:48:59,448 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_2143.png
+2025-09-06 08:48:59,624 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_8837.png
+2025-09-06 08:48:59,795 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_083837_5877.png
+2025-09-06 08:48:59,796 | INFO | __main__ | daily_news_collection:101 | 生成了 10 张卡片
+2025-09-06 08:48:59,813 | INFO | __main__ | daily_news_collection:107 | 每日新闻采集任务完成，耗时 622.4 秒
+2025-09-06 08:49:03,010 | INFO | notifier | send_serverchan:36 | ServerChan 推送成功
+2025-09-06 08:49:03,010 | INFO | __main__ | daily_news_collection:115 | 已通过服务器酱推送到微信
+2025-09-06 09:14:02,968 | INFO | __main__ | daily_news_collection:52 | 开始每日新闻采集任务 - 2025-09-06 09:14:02
+2025-09-06 09:14:02,969 | INFO | __main__ | daily_news_collection:55 | 正在爬取AI行业新闻...
+2025-09-06 09:14:17,791 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-06 09:14:20,156 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-06 09:14:22,838 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: arxiv_ai -> 0 items
+2025-09-06 09:14:44,484 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: towards_data_science -> 10 items
+2025-09-06 09:15:09,125 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_news -> 10 items
+2025-09-06 09:15:30,689 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: mit_tech_review -> 10 items
+2025-09-06 09:15:57,850 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: qbitai -> 10 items
+2025-09-06 09:16:18,288 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: jiqizhixin -> 10 items
+2025-09-06 09:16:21,857 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: zhidx -> 0 items
+2025-09-06 09:16:45,250 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: infoq_cn -> 10 items
+2025-09-06 09:17:10,297 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: 36kr -> 8 items
+2025-09-06 09:17:12,868 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: xinzhiyuan -> 0 items
+2025-09-06 09:17:33,572 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_tech_review -> 10 items
+2025-09-06 09:17:37,302 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: leiphone_ai -> 0 items
+2025-09-06 09:17:40,127 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: pingwest -> 0 items
+2025-09-06 09:18:02,995 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ifanr -> 5 items
+2025-09-06 09:18:40,942 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: geekpark -> 10 items
+2025-09-06 09:19:11,176 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: tmtpost -> 1 items
+2025-09-06 09:19:30,404 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ithome_ai -> 5 items
+2025-09-06 09:19:33,178 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: cnbeta_ai -> 0 items
+2025-09-06 09:20:05,695 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: oschina -> 6 items
+2025-09-06 09:20:08,767 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: aibase -> 0 items
+2025-09-06 09:20:14,857 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: deeptech -> 0 items
+2025-09-06 09:20:19,895 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: hn_ai -> 0 items
+2025-09-06 09:20:26,979 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_ml -> 0 items
+2025-09-06 09:20:31,806 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_artificial -> 0 items
+2025-09-06 09:20:37,489 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_localllama -> 0 items
+2025-09-06 09:20:43,497 | ERROR | crawler | crawl_github_trending:155 | Error crawling GitHub trending: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\util\ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\urllib3\util\ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\crawler.py", line 136, in crawl_github_trending
+    response = requests.get(url, params=params, headers=self.headers)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\.venv\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-09-06 09:20:43,510 | INFO | __main__ | daily_news_collection:57 | 爬取到 115 篇文章
+2025-09-06 09:20:43,510 | INFO | __main__ | daily_news_collection:62 | 去重后剩余 105 篇文章
+2025-09-06 09:20:43,510 | INFO | __main__ | daily_news_collection:65 | 正在生成文章摘要...
+2025-09-06 09:20:47,086 | INFO | openai._base_client | _sleep_for_retry:1071 | Retrying request to /chat/completions in 0.384146 seconds
+2025-09-06 09:20:50,515 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:21:02,014 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:21:16,132 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:21:29,257 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:21:41,781 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:21:55,402 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:22:04,784 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:22:20,336 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:22:34,227 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:22:45,601 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:22:56,413 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:23:06,396 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:23:16,389 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:23:27,630 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:23:44,278 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:23:55,312 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:24:09,100 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:24:20,091 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:24:33,227 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:24:44,697 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 09:24:56,967 | INFO | __main__ | daily_news_collection:67 | 生成了 20 个摘要
+2025-09-06 09:24:56,967 | INFO | __main__ | daily_news_collection:70 | 正在应用个性化过滤...
+2025-09-06 09:24:56,968 | INFO | __main__ | daily_news_collection:72 | 过滤后剩余 10 个摘要
+2025-09-06 09:24:56,972 | INFO | __main__ | daily_news_collection:78 | 正在预加载图片...
+2025-09-06 09:24:56,972 | INFO | image_loader | preload_images:252 | 开始预加载 10 张图片...
+2025-09-06 09:24:56,972 | INFO | image_loader | load_images_batch:213 | 开始并行下载 10 张图片...
+2025-09-06 09:25:01,024 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=techcrunch.com/wp-content/uploads/2024/09/roblox-heading.jpg?resize=1200,800&w=600&q=80&output=webp (24618 bytes)
+2025-09-06 09:25:01,026 | INFO | image_loader | load_image:190 | 图片处理完成: https://techcrunch.com/wp-content/uploads/2024/09/roblox-heading.jpg?resize=1200,800 -> (600, 400)
+2025-09-06 09:25:01,158 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=towardsdatascience.com/wp-content/uploads/2025/09/nipun-haldar-X1V6aogS9XY-unsplash-scaled-1.jpg&w=600&q=80&output=webp (23442 bytes)
+2025-09-06 09:25:01,159 | INFO | image_loader | load_image:190 | 图片处理完成: https://towardsdatascience.com/wp-content/uploads/2025/09/nipun-haldar-X1V6aogS9XY-unsplash-scaled-1.jpg -> (600, 400)
+2025-09-06 09:25:01,265 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=towardsdatascience.com/wp-content/uploads/2025/09/ChatGPT-Image-Jul-10-2025-06_24_39-AM.jpg&w=600&q=80&output=webp (20258 bytes)
+2025-09-06 09:25:01,267 | INFO | image_loader | load_image:190 | 图片处理完成: https://towardsdatascience.com/wp-content/uploads/2025/09/ChatGPT-Image-Jul-10-2025-06_24_39-AM.jpg -> (600, 400)
+2025-09-06 09:25:06,801 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=towardsdatascience.com/wp-content/uploads/2025/09/tds.png&w=600&q=80&output=webp (23986 bytes)
+2025-09-06 09:25:06,802 | INFO | image_loader | load_image:190 | 图片处理完成: https://towardsdatascience.com/wp-content/uploads/2025/09/tds.png -> (600, 307)
+2025-09-06 09:25:06,803 | INFO | image_loader | load_images_batch:237 | 批量图片加载完成: 10/10 成功，耗时 9.83s
+2025-09-06 09:25:06,805 | INFO | __main__ | daily_news_collection:80 | 图片预加载完成
+2025-09-06 09:25:06,805 | INFO | __main__ | daily_news_collection:97 | 正在生成新闻卡片...
+2025-09-06 09:25:06,978 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_1431.png
+2025-09-06 09:25:07,147 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_1943.png
+2025-09-06 09:25:07,295 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_5420.png
+2025-09-06 09:25:07,465 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_5055.png
+2025-09-06 09:25:07,629 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_2653.png
+2025-09-06 09:25:07,757 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_7648.png
+2025-09-06 09:25:07,979 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_4230.png
+2025-09-06 09:25:08,267 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_481.png
+2025-09-06 09:25:08,465 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_1367.png
+2025-09-06 09:25:08,632 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_091402_6448.png
+2025-09-06 09:25:08,633 | INFO | __main__ | daily_news_collection:101 | 生成了 10 张卡片
+2025-09-06 09:25:08,652 | INFO | __main__ | daily_news_collection:107 | 每日新闻采集任务完成，耗时 665.7 秒
+2025-09-06 09:25:14,905 | INFO | notifier | send_serverchan:36 | ServerChan 推送成功
+2025-09-06 09:25:14,906 | INFO | __main__ | daily_news_collection:115 | 已通过服务器酱推送到微信
+2025-09-06 10:12:52,858 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:52,864 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:52,865 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:52,865 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:52,866 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:53,277 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:53,675 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:53,676 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:53,677 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:53,677 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:12:53,678 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:16:14,998 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:16:18,892 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:16:23,702 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:16:31,936 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:16:49,575 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:16:57,166 | ERROR | summarizer | generate_summary:76 | Error generating summary: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "D:\makemoney\CODEFILES\9\0902\aurora-ai-daily\src\summarizer.py", line 32, in generate_summary
+    标题: {article['title']}
+           ~~~~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-09-06 10:16:59,473 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:17:03,601 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:17:09,065 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:17:18,743 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:17:36,303 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:20:21,247 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:20:25,873 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:20:30,520 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:20:39,305 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:20:56,289 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:21:05,325 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:21:20,967 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:21:25,141 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:21:30,466 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:21:38,645 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:21:57,038 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:26:01,926 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:26:06,204 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:26:11,395 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:26:20,577 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:26:38,137 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:26:48,391 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:27:06,377 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:27:10,774 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:27:16,180 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:27:26,521 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:27:46,803 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:29:59,198 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:30:03,407 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:30:08,748 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:30:18,799 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:30:33,743 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:30:46,096 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:31:05,456 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:31:09,990 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:31:16,800 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:31:26,368 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:31:43,239 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:33:23,722 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:33:27,253 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:33:32,688 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:33:42,297 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:33:59,997 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:34:08,782 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:34:27,196 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:34:31,438 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:34:37,159 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:34:47,822 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:35:05,710 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:41:16,190 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:41:20,076 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:41:24,811 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:41:33,985 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:41:51,892 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:42:00,371 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:42:17,691 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:42:22,441 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:42:27,816 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:42:37,081 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:42:52,983 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:59:27,246 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:59:31,041 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:59:36,482 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 10:59:45,866 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:00:00,700 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:00:09,588 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:00:25,775 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:00:29,925 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:00:35,730 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:00:45,180 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:01:04,948 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:04:33,779 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:04:37,691 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:04:42,795 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:04:52,349 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:05:07,566 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:05:17,987 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:05:35,670 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:05:39,931 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:05:45,384 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:05:55,222 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:06:11,855 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:14:39,157 | INFO | __main__ | daily_news_collection:52 | 开始每日新闻采集任务 - 2025-09-06 11:14:39
+2025-09-06 11:14:39,158 | INFO | __main__ | daily_news_collection:55 | 正在爬取AI行业新闻...
+2025-09-06 11:15:00,492 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: techcrunch_ai -> 10 items
+2025-09-06 11:15:03,394 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: venturebeat_ai -> 0 items
+2025-09-06 11:15:10,583 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: arxiv_ai -> 0 items
+2025-09-06 11:15:15,642 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: towards_data_science -> 0 items
+2025-09-06 11:15:25,695 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_news -> 0 items
+2025-09-06 11:15:51,197 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: mit_tech_review -> 10 items
+2025-09-06 11:16:21,723 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: qbitai -> 10 items
+2025-09-06 11:16:45,963 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: jiqizhixin -> 10 items
+2025-09-06 11:16:49,674 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: zhidx -> 0 items
+2025-09-06 11:17:17,456 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: infoq_cn -> 10 items
+2025-09-06 11:17:42,967 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: 36kr -> 8 items
+2025-09-06 11:17:45,634 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: xinzhiyuan -> 0 items
+2025-09-06 11:18:22,036 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ai_tech_review -> 10 items
+2025-09-06 11:18:26,814 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: leiphone_ai -> 0 items
+2025-09-06 11:18:31,299 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: pingwest -> 0 items
+2025-09-06 11:19:16,668 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ifanr -> 5 items
+2025-09-06 11:19:57,353 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: geekpark -> 10 items
+2025-09-06 11:20:27,999 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: tmtpost -> 0 items
+2025-09-06 11:20:47,877 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: ithome_ai -> 4 items
+2025-09-06 11:20:50,676 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: cnbeta_ai -> 0 items
+2025-09-06 11:21:22,163 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: oschina -> 6 items
+2025-09-06 11:21:25,149 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: aibase -> 0 items
+2025-09-06 11:21:29,313 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: deeptech -> 0 items
+2025-09-06 11:21:48,049 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: hn_ai -> 10 items
+2025-09-06 11:22:16,356 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_ml -> 10 items
+2025-09-06 11:22:27,993 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_artificial -> 10 items
+2025-09-06 11:22:39,314 | INFO | crawler | crawl_rss_feed:104 | RSS fetched: reddit_localllama -> 10 items
+2025-09-06 11:22:41,792 | INFO | __main__ | daily_news_collection:57 | 爬取到 143 篇文章
+2025-09-06 11:22:41,795 | INFO | __main__ | daily_news_collection:62 | 去重后剩余 133 篇文章
+2025-09-06 11:22:41,796 | INFO | __main__ | daily_news_collection:65 | 正在生成文章摘要...
+2025-09-06 11:22:43,495 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:22:57,508 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:23:14,359 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:23:29,005 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:23:42,305 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:23:56,818 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:24:08,692 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:24:24,238 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:24:40,269 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:24:54,562 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:25:10,015 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:25:22,600 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:25:38,897 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:25:56,893 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:26:11,024 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:26:27,285 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:26:45,688 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:27:00,660 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:27:15,732 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:27:32,452 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 11:27:46,584 | INFO | __main__ | daily_news_collection:67 | 生成了 20 个摘要
+2025-09-06 11:27:46,584 | INFO | __main__ | daily_news_collection:70 | 正在应用个性化过滤...
+2025-09-06 11:27:46,585 | INFO | __main__ | daily_news_collection:72 | 过滤后剩余 14 个摘要
+2025-09-06 11:27:46,592 | INFO | __main__ | daily_news_collection:78 | 正在预加载图片...
+2025-09-06 11:27:46,592 | INFO | image_loader | preload_images:252 | 开始预加载 10 张图片...
+2025-09-06 11:27:46,592 | INFO | image_loader | load_images_batch:213 | 开始并行下载 10 张图片...
+2025-09-06 11:27:48,082 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=wp.technologyreview.com/wp-content/uploads/2025/09/IMG_9643.jpeg?resize=1200,600&w=600&q=80&output=webp (8082 bytes)
+2025-09-06 11:27:48,084 | INFO | image_loader | load_image:190 | 图片处理完成: https://wp.technologyreview.com/wp-content/uploads/2025/09/IMG_9643.jpeg?resize=1200,600 -> (600, 300)
+2025-09-06 11:27:48,137 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=wp.technologyreview.com/wp-content/uploads/2025/08/250826_Rhiannon_AI_clone_hero.jpg?resize=1200,600&w=600&q=80&output=webp (15120 bytes)
+2025-09-06 11:27:48,139 | INFO | image_loader | load_image:190 | 图片处理完成: https://wp.technologyreview.com/wp-content/uploads/2025/08/250826_Rhiannon_AI_clone_hero.jpg?resize=1200,600 -> (600, 300)
+2025-09-06 11:27:48,166 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=wp.technologyreview.com/wp-content/uploads/2025/08/August-Thumb.png?resize=1200,600&w=600&q=80&output=webp (14710 bytes)
+2025-09-06 11:27:48,168 | INFO | image_loader | load_image:190 | 图片处理完成: https://wp.technologyreview.com/wp-content/uploads/2025/08/August-Thumb.png?resize=1200,600 -> (600, 300)
+2025-09-06 11:27:48,219 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=wp.technologyreview.com/wp-content/uploads/2025/08/MITTR-Cicso-Socials_V2-Cover1200.png?resize=1200,600&w=600&q=80&output=webp (19292 bytes)
+2025-09-06 11:27:48,222 | INFO | image_loader | load_image:190 | 图片处理完成: https://wp.technologyreview.com/wp-content/uploads/2025/08/MITTR-Cicso-Socials_V2-Cover1200.png?resize=1200,600 -> (600, 300)
+2025-09-06 11:27:48,374 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=wp.technologyreview.com/wp-content/uploads/2025/08/iStock-1333328712.jpg?resize=1200,600&w=600&q=80&output=webp (27560 bytes)
+2025-09-06 11:27:48,376 | INFO | image_loader | load_image:190 | 图片处理完成: https://wp.technologyreview.com/wp-content/uploads/2025/08/iStock-1333328712.jpg?resize=1200,600 -> (600, 300)
+2025-09-06 11:27:48,600 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=wp.technologyreview.com/wp-content/uploads/2025/08/NiCE-Landing-page-7200x4050-2.png?resize=1200,600&w=600&q=80&output=webp (19482 bytes)
+2025-09-06 11:27:48,602 | INFO | image_loader | load_image:190 | 图片处理完成: https://wp.technologyreview.com/wp-content/uploads/2025/08/NiCE-Landing-page-7200x4050-2.png?resize=1200,600 -> (600, 300)
+2025-09-06 11:27:48,719 | INFO | image_loader | _download_image_with_retry:118 | 图片下载成功: https://images.weserv.nl/?url=wp.technologyreview.com/wp-content/uploads/2025/08/250926-james-ai2.jpg?resize=1200,600&w=600&q=80&output=webp (16772 bytes)
+2025-09-06 11:27:48,721 | INFO | image_loader | load_image:190 | 图片处理完成: https://wp.technologyreview.com/wp-content/uploads/2025/08/250926-james-ai2.jpg?resize=1200,600 -> (600, 300)
+2025-09-06 11:27:48,721 | INFO | image_loader | load_images_batch:237 | 批量图片加载完成: 10/10 成功，耗时 2.13s
+2025-09-06 11:27:48,724 | INFO | __main__ | daily_news_collection:80 | 图片预加载完成
+2025-09-06 11:27:48,724 | INFO | __main__ | daily_news_collection:97 | 正在生成新闻卡片...
+2025-09-06 11:27:48,948 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_456.png
+2025-09-06 11:27:49,139 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_1872.png
+2025-09-06 11:27:49,254 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_8550.png
+2025-09-06 11:27:49,408 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_3886.png
+2025-09-06 11:27:49,611 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_6375.png
+2025-09-06 11:27:49,776 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_1634.png
+2025-09-06 11:27:49,965 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_879.png
+2025-09-06 11:27:50,175 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_3653.png
+2025-09-06 11:27:50,436 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_9473.png
+2025-09-06 11:27:50,638 | INFO | card_generator | create_card:103 | Card saved using detailed template: generated_cards\card_20250906_111439_2585.png
+2025-09-06 11:27:50,638 | INFO | __main__ | daily_news_collection:101 | 生成了 10 张卡片
+2025-09-06 11:27:50,645 | INFO | __main__ | daily_news_collection:107 | 每日新闻采集任务完成，耗时 791.5 秒
+2025-09-06 11:27:54,109 | INFO | notifier | send_serverchan:36 | ServerChan 推送成功
+2025-09-06 11:27:54,110 | INFO | __main__ | daily_news_collection:115 | 已通过服务器酱推送到微信
+2025-09-07 09:39:19,593 | INFO | httpx | _send_single_request:1025 | HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"

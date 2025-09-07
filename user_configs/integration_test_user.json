@@ -1,0 +1,107 @@
+{
+  "user_id": "integration_test_user",
+  "created_at": "2025-09-06T10:05:13.173129",
+  "interests": [
+    "AI技术",
+    "机器学习"
+  ],
+  "reading_history": [],
+  "interaction_history": [
+    {
+      "timestamp": "2025-09-06T10:05:13.173150",
+      "type": "article_read",
+      "data": {
+        "article_id": "breakthrough_001",
+        "title": "突破性AI技术发布",
+        "reading_time": 180,
+        "completion_rate": 0.95
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:12:54.014102",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:17:43.896840",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:22:04.145874",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:27:54.488678",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:31:50.891022",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:35:13.985273",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T10:43:01.121849",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:01:12.979879",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    },
+    {
+      "timestamp": "2025-09-06T11:06:19.570202",
+      "type": "article_read",
+      "data": {
+        "article_title": "Meta发布Llama 3.0，开源AI模型新突破",
+        "summary_level": "business",
+        "question_asked": "Meta的Llama 3.0有什么特点？"
+      }
+    }
+  ],
+  "preferences": {
+    "summary_level": "business",
+    "notification_frequency": "daily",
+    "preferred_sources": []
+  }
+}

@@ -35,12 +35,28 @@ class AINewsCrawler:
             'ai_news': 'https://artificialintelligence-news.com/feed/',
             'mit_tech_review': 'https://www.technologyreview.com/topic/artificial-intelligence/feed/',
 
-            # 中文媒体
+            # 中文媒体 - 原有
             'qbitai': 'https://www.qbitai.com/feed',              # 量子位
             'jiqizhixin': 'https://www.jiqizhixin.com/rss',       # 机器之心
             'zhidx': 'https://zhidx.com/feed',                    # 智东西
             'infoq_cn': 'https://www.infoq.cn/feed',              # InfoQ 中文站
             '36kr': 'https://36kr.com/feed',                      # 36氪全站（后续在代码中过滤 AI 相关）
+
+            # 中文媒体 - 新增
+            'xinzhiyuan': 'https://mp.weixin.qq.com/rss?__biz=MzI3MTA0MTk1MA==',  # 新智元
+            'ai_tech_review': 'https://www.jiqizhixin.com/rss',   # AI科技评论（使用机器之心RSS作为备选）
+            'leiphone_ai': 'https://www.leiphone.com/category/ai/feed',  # 雷锋网AI
+            'pingwest': 'https://www.pingwest.com/feed',          # PingWest品玩
+            'ifanr': 'https://www.ifanr.com/feed',                # 爱范儿
+            'geekpark': 'https://www.geekpark.net/rss',           # 极客公园
+            'tmtpost': 'https://www.tmtpost.com/rss.xml',         # 钛媒体
+            'ithome_ai': 'https://www.ithome.com/rss/',           # IT之家
+            'cnbeta_ai': 'https://www.cnbeta.com/backend/rss/',   # cnBeta
+            'oschina': 'https://www.oschina.net/news/rss',       # 开源中国
+            
+            # 专业AI媒体
+            'aibase': 'https://www.aibase.com/rss',               # AIBase（假设RSS地址）
+            'deeptech': 'https://www.deeptech.cn/rss',            # DeepTech深科技
 
             # 社区
             'hn_ai': 'https://hnrss.org/newest?q=ai',             # Hacker News AI 关键词
@@ -69,10 +85,19 @@ class AINewsCrawler:
                     'crawl_time': datetime.now().isoformat(),
                     'image': image_url or ""
                 }
-                # 对 36氪做简单关键词过滤，仅保留 AI 相关
-                if source_name == '36kr':
+                # 对综合性媒体做AI关键词过滤，仅保留AI相关内容
+                general_media = ['36kr', 'pingwest', 'ifanr', 'geekpark', 'tmtpost', 'ithome_ai', 'cnbeta_ai', 'oschina']
+                if source_name in general_media:
                     text = (entry.get('title', '') + ' ' + entry.get('summary', '')).lower()
-                    if (' ai ' not in f" {text} ") and ('人工智能' not in text):
+                    ai_keywords = [
+                        ' ai ', 'ai ', '人工智能', '机器学习', '深度学习', '神经网络', 
+                        '大模型', 'chatgpt', 'gpt', 'llm', '自动驾驶', '计算机视觉',
+                        'opencv', 'pytorch', 'tensorflow', '算法', 'nlp', '自然语言',
+                        '智能', '机器人', '语音识别', '图像识别', '数据挖掘'
+                    ]
+                    # 检查是否包含任何AI相关关键词
+                    has_ai_content = any(keyword in text for keyword in ai_keywords)
+                    if not has_ai_content:
                         continue
                 articles.append(article_data)
                 
